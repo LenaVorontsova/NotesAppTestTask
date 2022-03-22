@@ -25,11 +25,23 @@ class NoteTableView: UITableViewController {
         }
     }
     
+    func nonDeletedNotes() -> [Note] {
+        var noDeleteNoteList = [Note]()
+        
+        for note in noteList {
+            if(note.deletedDate == nil) {
+                noDeleteNoteList.append(note)
+            }
+        }
+        
+        return noDeleteNoteList
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let noteCell = tableView.dequeueReusableCell(withIdentifier: "noteCellID", for: indexPath) as! NoteCell
         
         let thisNote: Note!
-        thisNote = noteList[indexPath.row]
+        thisNote = nonDeletedNotes()[indexPath.row]
         
         noteCell.descriptionLabel.text = thisNote.desc
         noteCell.titleLabel.text = thisNote.title
@@ -38,7 +50,7 @@ class NoteTableView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return noteList.count
+        return nonDeletedNotes().count
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -55,7 +67,7 @@ class NoteTableView: UITableViewController {
             let noteDetail = segue.destination as? NoteDetailVC
             
             let selectedNote: Note!
-            selectedNote = noteList[indexPath.row]
+            selectedNote = nonDeletedNotes()[indexPath.row]
             
             noteDetail!.selectedNote = selectedNote
             

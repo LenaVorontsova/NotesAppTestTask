@@ -57,5 +57,25 @@ class NoteDetailVC: UIViewController {
         }
     }
     
+    @IBAction func deleteNote(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+        do {
+            let results:NSArray = try context.fetch(request) as NSArray
+            for result in results {
+                let note = result as! Note
+                if(note == selectedNote) {
+                    note.deletedDate = Date()
+                    try context.save()
+                    navigationController?.popViewController(animated: true)
+                }
+            }
+        }
+        catch {
+            print("Fetch failed")
+        }
+    }
 }
 
