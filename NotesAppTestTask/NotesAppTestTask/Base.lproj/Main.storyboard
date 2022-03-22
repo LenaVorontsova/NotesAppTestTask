@@ -66,10 +66,13 @@
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="2Pn-n1-C1m">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="J7b-Yi-Xe6"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="addNote" id="J7b-Yi-Xe6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="editNote" id="eGb-Lx-Ynj"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5x-XL-ElV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,6 +165,9 @@
             <point key="canvasLocation" x="244.92753623188409" y="93.75"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eGb-Lx-Ynj"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
