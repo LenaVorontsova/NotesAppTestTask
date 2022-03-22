@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		845D9BB527EA09EA00C6DEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D9BB427EA09EA00C6DEAF /* AppDelegate.swift */; };
 		845D9BB727EA09EA00C6DEAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D9BB627EA09EA00C6DEAF /* SceneDelegate.swift */; };
-		845D9BB927EA09EA00C6DEAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D9BB827EA09EA00C6DEAF /* ViewController.swift */; };
+		845D9BB927EA09EA00C6DEAF /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D9BB827EA09EA00C6DEAF /* NoteDetailVC.swift */; };
 		845D9BBC27EA09EA00C6DEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845D9BBA27EA09EA00C6DEAF /* Main.storyboard */; };
 		845D9BBF27EA09EA00C6DEAF /* NotesAppTestTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 845D9BBD27EA09EA00C6DEAF /* NotesAppTestTask.xcdatamodeld */; };
 		845D9BC127EA09EE00C6DEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845D9BC027EA09EE00C6DEAF /* Assets.xcassets */; };
 		845D9BC427EA09EE00C6DEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845D9BC227EA09EE00C6DEAF /* LaunchScreen.storyboard */; };
+		845D9BCE27EA0C9200C6DEAF /* NoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D9BCD27EA0C9200C6DEAF /* NoteTableView.swift */; };
+		845D9BD027EA12A900C6DEAF /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D9BCF27EA12A900C6DEAF /* NoteCell.swift */; };
+		845D9BD227EA157C00C6DEAF /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D9BD127EA157C00C6DEAF /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		845D9BB127EA09EA00C6DEAF /* NotesAppTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesAppTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845D9BB427EA09EA00C6DEAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845D9BB627EA09EA00C6DEAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		845D9BB827EA09EA00C6DEAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		845D9BB827EA09EA00C6DEAF /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
 		845D9BBB27EA09EA00C6DEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		845D9BBE27EA09EA00C6DEAF /* NotesAppTestTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesAppTestTask.xcdatamodel; sourceTree = "<group>"; };
 		845D9BC027EA09EE00C6DEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845D9BC327EA09EE00C6DEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845D9BC527EA09EE00C6DEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845D9BCD27EA0C9200C6DEAF /* NoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableView.swift; sourceTree = "<group>"; };
+		845D9BCF27EA12A900C6DEAF /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		845D9BD127EA157C00C6DEAF /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,15 @@
 			children = (
 				845D9BB427EA09EA00C6DEAF /* AppDelegate.swift */,
 				845D9BB627EA09EA00C6DEAF /* SceneDelegate.swift */,
-				845D9BB827EA09EA00C6DEAF /* ViewController.swift */,
+				845D9BB827EA09EA00C6DEAF /* NoteDetailVC.swift */,
 				845D9BBA27EA09EA00C6DEAF /* Main.storyboard */,
 				845D9BC027EA09EE00C6DEAF /* Assets.xcassets */,
 				845D9BC227EA09EE00C6DEAF /* LaunchScreen.storyboard */,
 				845D9BC527EA09EE00C6DEAF /* Info.plist */,
 				845D9BBD27EA09EA00C6DEAF /* NotesAppTestTask.xcdatamodeld */,
+				845D9BCD27EA0C9200C6DEAF /* NoteTableView.swift */,
+				845D9BCF27EA12A900C6DEAF /* NoteCell.swift */,
+				845D9BD127EA157C00C6DEAF /* Note.swift */,
 			);
 			path = NotesAppTestTask;
 			sourceTree = "<group>";
@@ -141,8 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845D9BB927EA09EA00C6DEAF /* ViewController.swift in Sources */,
+				845D9BB927EA09EA00C6DEAF /* NoteDetailVC.swift in Sources */,
+				845D9BCE27EA0C9200C6DEAF /* NoteTableView.swift in Sources */,
+				845D9BD227EA157C00C6DEAF /* Note.swift in Sources */,
 				845D9BB527EA09EA00C6DEAF /* AppDelegate.swift in Sources */,
+				845D9BD027EA12A900C6DEAF /* NoteCell.swift in Sources */,
 				845D9BBF27EA09EA00C6DEAF /* NotesAppTestTask.xcdatamodeld in Sources */,
 				845D9BB727EA09EA00C6DEAF /* SceneDelegate.swift in Sources */,
 			);
