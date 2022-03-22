@@ -108,7 +108,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aBI-9i-1Cz">
-                                <rect key="frame" x="20" y="232" width="374" height="529"/>
+                                <rect key="frame" x="20" y="232" width="374" height="536"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -126,11 +126,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bN6-3p-oHb">
+                                <rect key="frame" x="123" y="797" width="168" height="37"/>
+                                <color key="backgroundColor" red="0.97254908080000002" green="0.6238256579" blue="0.59270224319999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="dJa-JF-aVY" firstAttribute="top" secondItem="Q1i-Se-Fjh" secondAttribute="bottom" constant="25" id="0OQ-aX-oXZ"/>
+                            <constraint firstItem="bN6-3p-oHb" firstAttribute="top" secondItem="aBI-9i-1Cz" secondAttribute="bottom" constant="29" id="1Hh-KP-GTL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q1i-Se-Fjh" secondAttribute="trailing" constant="20" id="2nM-Ki-DAP"/>
                             <constraint firstItem="Q1i-Se-Fjh" firstAttribute="top" secondItem="3BQ-tc-PwR" secondAttribute="bottom" constant="5" id="41T-Za-L9u"/>
                             <constraint firstItem="aBI-9i-1Cz" firstAttribute="top" secondItem="dJa-JF-aVY" secondAttribute="bottom" constant="15" id="AxY-JD-0xq"/>
@@ -140,12 +150,15 @@
                             <constraint firstItem="dJa-JF-aVY" firstAttribute="top" secondItem="Q1i-Se-Fjh" secondAttribute="bottom" constant="25" id="L91-DI-7fi"/>
                             <constraint firstItem="3BQ-tc-PwR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="LIj-RZ-Qkr"/>
                             <constraint firstItem="dJa-JF-aVY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="LY4-rF-n1b"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aBI-9i-1Cz" secondAttribute="bottom" constant="101" id="Us6-EG-1MP"/>
+                            <constraint firstItem="bN6-3p-oHb" firstAttribute="top" secondItem="aBI-9i-1Cz" secondAttribute="bottom" constant="29" id="LfX-3x-OxZ"/>
+                            <constraint firstItem="bN6-3p-oHb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="TIU-ZA-iYC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3BQ-tc-PwR" secondAttribute="trailing" constant="153" id="iee-EL-WYX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bN6-3p-oHb" secondAttribute="trailing" constant="123" id="l5f-yV-2hO"/>
                             <constraint firstItem="3BQ-tc-PwR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="pQa-ev-KJ4"/>
                             <constraint firstItem="aBI-9i-1Cz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="t2N-lR-jVA"/>
                             <constraint firstItem="Q1i-Se-Fjh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uIO-lo-cQe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aBI-9i-1Cz" secondAttribute="trailing" constant="20" id="wDT-2y-y64"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bN6-3p-oHb" secondAttribute="bottom" constant="28" id="y0G-9f-EWv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add/Edit note" id="yF8-zx-yPR">
